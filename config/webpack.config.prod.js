@@ -175,7 +175,7 @@ module.exports = {
                     options: {
                       hmr: false,
                       modules:1,
-                      localIdentName: 'name__local___[hash:base64:5]'
+                      localIdentName: '[name]__[local]___[hash:base64:5]'
                     },
                   },
                   use: [
