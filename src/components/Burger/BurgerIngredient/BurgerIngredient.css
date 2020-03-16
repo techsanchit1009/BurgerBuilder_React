@@ -106,7 +106,7 @@
 }
 
 .Tomato {
-  width: 80%;
+  width: 65%;
   height: 3%;
   background: linear-gradient(#d60f0f, #d80f0f);
   margin: 2% auto;
@@ -116,9 +116,9 @@
 
 
 .Onion {
-  width: 80%;
+  width: 65%;
   height: 3%;
-  background: linear-gradient(rgb(236, 17, 101), #ad194a);
+  background: linear-gradient(rgb(155, 15, 69), #ad194a);
   margin: 2% auto;
   border-radius: 15px;
 }

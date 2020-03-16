@@ -11,9 +11,9 @@ const controls = [
 ];
 
 const buildControls = props => {
-  console.log(props.disabled);
   return (
     <div className={classes.BuildControls}>
+      <p>Current Burger price:  <strong>₹ {(props.totalPrice) + 0.10*(props.totalPrice)}</strong>(incl of Taxes)</p>
       {controls.map(ctrl => {
         return (
           <BuildControl
@@ -22,9 +22,14 @@ const buildControls = props => {
             added={() => props.ingredientAdded(ctrl.type)}
             removed={() => props.ingredientRemoved(ctrl.type)}
             disabled={props.disabled[ctrl.type]}
+            igPrice={props.igPrices[ctrl.type]}
           />
         );
       })}
+      <button 
+        className={classes.OrderButton}
+        disabled={!props.purchasable}
+        onClick={props.ordered}>Place Order</button>
     </div>
   );
 };
